@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Flipkart</title>
+
+</head>
+
+
+<!-- new comments is added here.. to new branch is created... in github -->
+
+<body class="bg-[#f1f2f4]">
+
+    <!-- Header Section -->
+    <div
+        class="bg-white text-gray-800 px-4 py-3 flex justify-between md:justify-evenly items-center border-b border-gray-300">
+        <!-- Logo -->
+        <a href="/" class="flex items-center space-x-2">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                alt="Flipkart Logo" class="w-28 md:w-32">
+        </a>
+
+        <!-- Search Bar -->
+        <form class="flex items-center w-full max-w-3xl border border-gray-200 rounded-md px-3 py-2 bg-[#f0f5ff]">
+            <i class="fas fa-search text-gray-500"></i>
+            <input type="text" placeholder="to change the code" aria-label="Search for Products, Brands, and More"
+                class="flex-grow outline-none border-none text-sm md:text-base text-gray-600 bg-[#f0f5ff] px-2">
+        </form>
+
+        <!-- User Options -->
+        <div class="flex items-center text-sm gap-4">
+            <!-- Login -->
+            <a href="#login" class="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+                    alt="Login" class="w-6 h-6">
+                <span>Login</span>
+            </a>
+
+            <!-- Cart -->
+            <a href="#cart" class="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+                    alt="Cart" class="w-6 h-6">
+                <span>Cart</span>
+            </a>
+
+            <!-- Become a Seller -->
+            <a href="#seller" class="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                    alt="Become a Seller" class="w-6 h-6">
+                <span>Become a Seller</span>
+            </a>
+
+            <!-- More Options -->
+            <button aria-label="More Options" class="text-gray-800 hover:text-blue-600 transition">
+                <img class="w-6 h-6"
+                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+                    alt="Dropdown with more help links">
+            </button>
+        </div>
+    </div>
+
+    <!-- Category Section -->
+    <div class="flex flex-wrap justify-center gap-10  bg-white p-3 " style="width: 98%; margin: 8px auto;">
+        <!-- Category Item -->
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Mobiles" src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100">
+            </div>
+            <span class="text-xs md:text-base">Groecry</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Fashion"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100">
+            </div>
+            <span class="text-xs md:text-base">Fashion</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Electronics" src="https://rukminim2.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100">
+            </div>
+            <span class="text-xs md:text-base">Electronics</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Home & Furniture"
+                    src="https://rukminim2.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100">
+            </div>
+            <span class="text-xs md:text-base">Home & Furniture</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Appliances"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100">
+            </div>
+            <span class="text-xs md:text-base">Appliances</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Flight Bookings"
+                    src="https://rukminim2.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100">
+            </div>
+            <span class="text-xs md:text-base">Flight Bookings</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Beauty, Toys & More"
+                    src="https://rukminim2.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100">
+            </div>
+            <span class="text-xs md:text-base">Beauty, Toys & More</span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-16 h-16">
+                <img alt="Two wheelers"
+                    src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100">
+            </div>
+            <span class="text-xs md:text-base">Two wheelers</span>
+        </div>
+    </div>
+
+    <!-- Slider Section -->
+    <div class="w-full h-60 " style=" width: 98%; margin: 8px auto;">
+        <div class=" slider relative overflow-hidden rounded-lg shadow-lg">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7ebf38837ddd6c4d.jpg?q=20"
+                        alt="Image 1" class="w-full h-full object-cover" style="height: 15rem;">
+                </div>
+                <div class="slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/1e5f2e97e448cee0.jpg?q=20"
+                        alt="Image 2" class="w-full h-full object-cover" style="height: 15rem;">
+                </div>
+                <div class="slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7f3cde58a30f6024.jpg?q=20"
+                        alt="Image 3" class="w-full h-full object-cover" style="height: 15rem;">
+                </div>
+                <div class="slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/d9290fb51138d286.png?q=20"
+                        alt="Image 4" class="w-full h-full object-cover" style="height: 15rem;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" bg-white p-4 mb-3 mt-3">
+        <div class="flex items-center justify-between mb-6">
+            <span class="text-3xl font-semibold">Best of Electronics</span>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        <div class="flex">
+            <div class="m-3 max-w-60 items-center border p-4">
+
+                <img src="https://rukminim2.flixcart.com/image/200/200/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70"
+                    alt="" class="m-auto w-[200px] h-[120px] object-contain">
+                <p class="text-center mt-2">Monitors</p>
+                <p class="text-center font-bold">From 7949</p>
+            </div>
+
+            <div class="m-3 max-w-60 items-center border p-4">
+
+                <img src="https://rukminim2.flixcart.com/image/400/400/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=70"
+                    alt="" class="m-auto  w-[200px] h-[120px] object-contain">
+                <p class="text-center mt-2">Ear Phones</p>
+                <p class="text-center font-bold">From 7949</p>
+            </div>
+
+
+            <div class="m-3 max-w-60 items-center border p-4">
+
+                <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/smartwatch/5/v/s/-original-imagxrhetgfuebnn.jpeg?q=70"
+                    alt="" class="m-auto w-[200px] h-[120px] object-contain">
+                <p class="text-center mt-2">Watches</p>
+                <p class="text-center font-bold">From 7949</p>
+            </div>
+
+            <div class="m-3 max-w-60 items-center border p-4">
+
+                <img src="https://rukminim2.flixcart.com/image/200/200/xif0q/projector/q/7/6/i9-pro-10-ei9027-led-projector-egate-original-imah5e3bggu5qcgp.jpeg?q=70"
+                    alt="" class="m-auto w-[200px] h-[120px] object-contain">
+                <p class="text-center mt-2">Projectors</p>
+                <p class="text-center font-bold">From 7949</p>
+            </div>
+
+            <div class="m-3 max-w-60 items-center border p-4">
+
+                <img src="https://rukminim2.flixcart.com/image/400/400/krwec280/role-play-toy/z/f/w/kids-camera-mini-rechargeable-and-shockproof-camera-creative-diy-original-imag5h7gdjzrvzdr.jpeg?q=70"
+                    alt="" class="m-auto w-[200px] h-[120px] object-contain">
+                <p class="text-center mt-2">Cameras</p>
+                <p class="text-center font-bold">From 7949</p>
+            </div>
+
+            <div class="m-3 max-w-60 items-center border p-4">
+
+                <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/smartwatch/x/l/3/-original-imahy7fh7nbgud85.jpeg?q=70"
+                    alt="" class="m-auto w-[200px] h-[120px] object-contain">
+                <p class="text-center mt-2">Smart Watches</p>
+                <p class="text-center font-bold">From 7949</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid grid-cols-4 gap-2 m-2">
+        <!-- Replace these image placeholders with your actual image URLs -->
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/d3fc442082091bed.png?q=20" alt="Image 8"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/7d27eb6667c1ea23.jpg?q=20" alt="Image 1"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/b1bd2227809495c7.jpeg?q=20" alt="Image 2"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/62e94f5a8f8faf9b.jpg?q=20" alt="Image 3"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/6a250a81d15ff953.jpg?q=20" alt="Image 4"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/90f849ee6cf7c1d4.jpg?q=20" alt="Image 5"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/419bf29b0aac8ee6.jpg?q=20" alt="Image 6"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/e9774d4f243958ee.jpg?q=20" alt="Image 7"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/aebeb013467237fa.png?q=20" alt="Image 9"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/1f461cd5218533a8.jpg?q=20" alt="Image 10"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/295ca24c084e1bb5.jpg?q=20" alt="Image 11"
+                class="w-full h-auto object-cover"></div>
+        <div><img src="https://rukminim2.flixcart.com/fk-p-flap/320/170/image/c672c84275180b63.jpg?q=20" alt="Image 12"
+                class="w-full h-auto object-cover"></div>
+    </div>
+
+
+    <footer style="background-color: yellowgreen; width: 100%; height: 50px;">
+        this is the footer
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- comment is added -->
+</body>
+
+</html>
