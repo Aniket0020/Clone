@@ -30,3 +30,124 @@
      object-fit: cover;
 
  }
+
+ /* info */
+
+ .info h2 {
+     font-size: 1rem;
+     color: #878787;
+     font-weight: 600;
+ }
+
+ .info {
+     font-size: 0.8rem;
+     padding: 30px;
+     color: gray;
+ }
+
+ /* footer */
+
+ footer {
+     background-color: #212121;
+     color: white;
+     width: 100%;
+     padding: 20px;
+ }
+
+ .f-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     gap: 20px;
+
+ }
+
+ .f-section h3 {
+     font-size: 0.9rem;
+     color: rgb(155, 154, 154);
+     margin-bottom: 10px;
+ }
+
+ .f-section ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ .f-section li a {
+     color: white;
+     text-decoration: none;
+     font-size: 0.8rem;
+ }
+
+ .f-section li a:hover {
+     color: yellow;
+ }
+
+ .f-section p {
+     font-size: 0.8rem;
+     line-height: 1.5;
+ }
+
+ #fc {
+     border-bottom: 1px solid gray;
+     padding: 20px;
+     height: 250px;
+ }
+
+ #mail {
+     border-left: 1px solid gray;
+     padding-left: 30px;
+ }
+
+ #reg a {
+     color: #2674e3;
+ }
+
+ .social {
+     margin: 10px 0px;
+ }
+
+ .soclink {
+     display: flex;
+     gap: 10px;
+     font-size: 1.2rem;
+ }
+
+ .combined {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     flex-wrap: wrap;
+     padding-top: 20px;
+
+ }
+
+ .footer-link {
+     display: flex;
+     flex-direction: row;
+     gap: 8px;
+     font-size: 0.8rem
+ }
+
+ .footer-link a {
+     text-decoration: none;
+     color: #ffcc00;
+     font-weight: bold;
+     display: flex;
+     gap: 2px;
+     font-size: 0.8rem
+ }
+
+ .footer-link:hover {
+     text-decoration: underline;
+ }
+
+
+ .bottom {
+     font-size: 0.8rem;
+     color: white;
+     align-items: center;
+ }
