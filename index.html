@@ -8,7 +8,9 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
     <title>Flipkart</title>
 
 </head>
@@ -19,53 +21,36 @@
 <body class="bg-[#f1f2f4]">
 
     <!-- Header Section -->
-    <div
-        class="bg-white text-gray-800 px-4 py-3 flex justify-between md:justify-evenly items-center border-b border-gray-300">
-        <!-- Logo -->
-        <a href="/" class="flex items-center space-x-2">
+    <header>
+        <div class="logo">
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
-                alt="Flipkart Logo" class="w-28 md:w-32">
-        </a>
-
-        <!-- Search Bar -->
-        <form class="flex items-center w-full max-w-3xl border border-gray-200 rounded-md px-3 py-2 bg-[#f0f5ff]">
-            <i class="fas fa-search text-gray-500"></i>
-            <input type="text" placeholder="Search for Products, Brands and More"
-                aria-label="Search for Products, Brands, and More"
-                class="flex-grow outline-none border-none text-sm md:text-base text-gray-600 bg-[#f0f5ff] px-2">
-        </form>
-
-        <!-- User Options -->
-        <div class="flex items-center text-sm gap-4">
-            <!-- Login -->
-            <a href="#login" class="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
-                    alt="Login" class="w-6 h-6">
-                <span>Login</span>
-            </a>
-
-            <!-- Cart -->
-            <a href="#cart" class="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
-                    alt="Cart" class="w-6 h-6">
-                <span>Cart</span>
-            </a>
-
-            <!-- Become a Seller -->
-            <a href="#seller" class="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition">
-                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
-                    alt="Become a Seller" class="w-6 h-6">
-                <span>Become a Seller</span>
-            </a>
-
-            <!-- More Options -->
-            <button aria-label="More Options" class="text-gray-800 hover:text-blue-600 transition">
-                <img class="w-6 h-6"
-                    src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
-                    alt="Dropdown with more help links">
-            </button>
+                alt="">
         </div>
-    </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search for Products, Brands and More">
+        </div>
+        <div class="download icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <div class="login icon">
+            <i class="fa-regular fa-circle-user"></i>
+            <span><a href="./login.html">Login</a></span>
+
+        </div>
+        <div class="Cart icon">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>Cart</span>
+        </div>
+        <div class="seller icon">
+            <i class="fa-solid fa-store"></i>
+            <span>Become a Seller</span>
+        </div>
+
+        <div class="menudot">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
 
     <!-- Category Section -->
     <div class="flex flex-wrap justify-center gap-10  bg-white p-3 " style="width: 98%; margin: 8px auto;">
@@ -159,10 +144,11 @@
         <div class="flex">
             <div class="m-3 max-w-60 items-center border p-4">
 
-                <img src="https://rukminim2.flixcart.com/image/200/200/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70"
-                    alt="" class="m-auto w-[200px] h-[120px] object-contain">
-                <p class="text-center mt-2">Monitors</p>
-                <p class="text-center font-bold">From 7949</p>
+                <a href="./mobile.html"><img src="https://m.media-amazon.com/images/I/81vxWpPpgNL._AC_UL480_QL65_.jpg"
+                        alt="" class="m-auto w-[200px] h-[120px] object-contain">
+                    <p class="text-center mt-2">Mobiles</p>
+                    <p class="text-center font-bold">From 1949</p>
+                </a>
             </div>
 
             <div class="m-3 max-w-60 items-center border p-4">
@@ -345,7 +331,7 @@
 
 
 
-    <div class="info">
+    <div class="Information">
 
         <h2>Flipkart Plus</h2>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty
         reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a
@@ -592,8 +578,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 
     <!-- comment is added -->
 </body>

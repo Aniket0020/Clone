@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flipkart Login/Signup</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                alt="">
+        </div>
+
+
+
+
+
+
+        <div class="menudot">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
+
+    <!-- Login Page -->
+    <div id="loginPage">
+        <div class="login-container">
+            <div class="left-section">
+                <h2>Login</h2>
+                <p>Get access to your Orders, Wishlist, and Recommendations</p>
+                <img src="./img/login.png">
+            </div>
+            <div class="right-section">
+                <input type="text" id="mobileNumber" placeholder="Enter Email/Mobile number">
+                <small id="errorMsg" style="display: block; color: red; margin-top: 5px;"></small>
+                <!-- Error message -->
+                <button id="requestOtp">Request OTP</button>
+                <a href="#" id="createAccount">New to Flipkart? Create an account</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTP Verification Page (Initially Hidden) -->
+    <div id="otpPage" class="hidden">
+        <div class="login-container">
+            <div class="left-section">
+                <h2>Login</h2>
+                <p>Get access to your Orders, Wishlist, and Recommendations</p>
+                <img src="./img/login.png">
+            </div>
+            <div class="right-section">
+                <h2>Login</h2>
+                <p>Please enter the OTP sent to <span id="enteredNumber"></span>. <a href="#"
+                        id="changeNumber">Change</a></p>
+                <div id="otpInputs">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+                <a href="./index.html" class="vbtn"> <button id="verifyOtp"> Verify</button></a>
+                <p>Not received your code? <span id="resendTimer">00:30</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-up Page (Initially Hidden) -->
+    <div id="signupPage" class="hidden">
+        <div class="login-container">
+            <div class="left-section">
+                <h2>Looks like you're new here!</h2>
+                <p>Sign up with your mobile number to get started</p>
+                <img src="./img/login.png">
+            </div>
+            <div class="right-section">
+                <input type="text" placeholder="Enter Mobile number">
+                <a href="./index.html" id="btn"><button> Continue</button></a>
+                <a href="#" id="existingUser">Existing User? Log in</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="f-container" id="fc">
+            <div class="f-section">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="f-section">
+                <h3>GROUP COMPANIES</h3>
+                <ul>
+                    <li><a href="#">Myntra</a></li>
+                    <li><a href="#">Cleartrip</a></li>
+                    <li><a href="#">Shopsy</a></li>
+                </ul>
+            </div>
+            <div class="f-section">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="f-section">
+                <h3>CONSUMER POLICY</h3>
+                <ul>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Grievance Redressal</a></li>
+                    <li><a href="#">EPR Compliance</a></li>
+                </ul>
+            </div>
+            <div class="f-section" id="mail">
+                <h3>MAIL US:</h3>
+                <p>Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia &<br>Clove Embassy Tech
+                    Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru, 560103, Karnataka, India</p>
+                <div class="social">
+                    <h3>Social</h3>
+                    <div class="soclink">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="f-section" id="reg">
+                <h3>REGISTERED OFFICE ADDRESS:</h3>
+                <p>Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia &<br>Clove Embassy Tech
+                    Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru, 560103, Karnataka,
+                    India<br>CIN : U51109KA2012PTC066107<br>Telephone: <a href="">044-45614700</a> / <a
+                        href="">9082158632</a></p>
+            </div>
+        </div>
+
+
+        <div class="f-container">
+            <div class="combined">
+
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+                        alt="Become a Seller" width="20" height="18" font-weight="bold">Become Seller
+                </a>
+
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+                        alt="Advertise" width="20" height="18" font-weight="bold"> Advertise
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+                        alt="Gift Cards" width="20" height="18" font-weight="bold"> Gift Cards
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+                        alt="Help Center" width="20" height="18" font-weight="bold"> Help Center
+                </a>
+
+
+
+                <div class="bottom">
+                    &copy; 2007-2025 Flipkart.com
+                </div>
+
+                <div class="payment-icons">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+                        alt="Payment methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>

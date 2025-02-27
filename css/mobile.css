@@ -1,0 +1,178 @@
+* {
+    margin: 0%;
+    font-family: Arial;
+    border: border-box;
+    padding: 0px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+/* Container */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.sidebar {
+    width: 15%;
+    height: 250vh;
+    line-height: 1.6;
+
+}
+
+.sidebar ul {
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+
+.cat {
+    width: 200px;
+    margin-bottom: 20px;
+    line-height: normal;
+
+}
+
+
+
+.brands {
+
+    width: 200px;
+    height: 170px;
+
+}
+
+
+
+
+/* box */
+.main {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ad {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.ad-phone {
+    border: 1px gainsboro solid;
+    overflow: auto;
+
+}
+
+.ad-mob {
+    display: flex;
+    overflow: auto;
+    padding: 10px;
+    height: 275px;
+    border-left: white 5px solid;
+    border-right: white 5px solid;
+}
+
+
+
+.ad-box {
+    height: 250px;
+}
+
+.ad-box img {
+    height: 250px;
+}
+
+.ad-info {
+    padding: 10px;
+}
+
+.box {
+
+    width: 220px;
+    background-color: #f2f2f2;
+    padding: 10px 10px 10px 10px;
+    /* margin-top: 15px; */
+    margin-bottom: 10px;
+
+}
+
+.box-img {
+    height: 210px;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.box-img img {
+    height: 210px;
+}
+
+.box p {
+    margin-bottom: 2px;
+}
+
+
+#sales {
+    font-size: 0.8rem;
+}
+
+
+#Festival {
+    padding: 5px;
+    background-color: #CC0C39;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.info {
+    line-height: 1.6;
+    padding: 10px;
+
+}
+
+.cost {
+    line-height: normal;
+    padding: 2px;
+
+}
+
+.cost strong {
+    font-size: 1.8rem;
+}
+
+.cost span {
+    font-size: 0.8rem;
+}
+
+.deliver {
+    margin: 4px 0px 4px 0px;
+}
+
+.btn button {
+    background-color: #ffd814;
+    color: black;
+    border: none;
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+/* footer */

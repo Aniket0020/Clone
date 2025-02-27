@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                alt="">
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search for Products, Brands and More">
+        </div>
+        <div class="download icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <div class="login icon">
+            <i class="fa-regular fa-circle-user"></i>
+            <span><a href="./login.html">Login</a></span>
+
+        </div>
+        <div class="Cart icon">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>Cart</span>
+        </div>
+        <div class="seller icon">
+            <i class="fa-solid fa-store"></i>
+            <span>Become a Seller</span>
+        </div>
+
+        <div class="menudot">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="cat"><b>Category</b>
+                <ul>
+
+                    <li>SmartPhones & Mobiles</li>
+
+                </ul>
+            </div>
+
+
+            <div class="brand " id="br">
+
+                <ul><b>Brands</b>
+                    <li><input type="checkbox">Samsung</li>
+                    <li><input type="checkbox">Motorola</li>
+                    <li><input type="checkbox">Redmi</li>
+                    <li><input type="checkbox">Realme</li>
+
+                    <!-- Hidden items that will be shown/hidden -->
+                    <div id="moreBrands" style="display:none;">
+                        <li><input type="checkbox">OnePlus</li>
+                        <li><input type="checkbox">Nokia</li>
+                        <li><input type="checkbox">Vivo</li>
+                        <li><input type="checkbox">POCO</li>
+                        <li><input type="checkbox">iQOO</li>
+                    </div>
+                </ul>
+
+                <!-- See More/See Less buttons -->
+                <button class="text-sky-500" id="toggleBtn" onclick="toggleBrands()">See More</button>
+            </div>
+
+
+
+            <div class="tech">
+                <ul><b>Celluar Technology</b>
+                    <li><input type="checkbox">3G</li>
+                    <li><input type="checkbox">4G</li>
+                    <li><input type="checkbox">5G</li>
+                </ul>
+            </div>
+
+            <div class="ram">
+                <ul><b>Ram Size</b>
+                    <li><input type="checkbox">4gb</li>
+                    <li><input type="checkbox">5gb</li>
+                    <li><input type="checkbox">6gb</li>
+                    <li><input type="checkbox">8gb</li>
+                    <li><input type="checkbox">12gb</li>
+                </ul>
+
+            </div>
+
+
+            <div class="storage">
+                <ul><b>Phone Storage</b>
+                    <li><input type="checkbox">8gb</li>
+                    <li><input type="checkbox">16gb</li>
+                    <li><input type="checkbox">32gb</li>
+                    <li><input type="checkbox">64gb</li>
+                    <li><input type="checkbox">128gb</li>
+                    <li><input type="checkbox">256gb</li>
+                </ul>
+
+            </div>
+
+            <div class="os">
+                <ul><b>Operating System</b>
+                    <li><input type="checkbox">Android 10.0</li>
+                    <li><input type="checkbox">Android 11.0</li>
+                    <li><input type="checkbox">Android 12.0</li>
+                    <li><input type="checkbox">Android 13.0</li>
+                    <li><input type="checkbox">Android 9.0</li>
+                    <li><input type="checkbox">iOS 12</li>
+                </ul>
+            </div>
+
+            <div class="speed">
+                <ul><b>Processor Speed</b>
+                    <li><input type="checkbox">Less Than 0.99 GHz</li>
+                    <li><input type="checkbox">1 - 1.49 GHz</li>
+                    <li><input type="checkbox">1.5 - 1.99 GHz</li>
+                    <li><input type="checkbox">2 - 2.4 GHz</li>
+                    <li><input type="checkbox">2.5 GHz & Above</li>
+
+                </ul>
+            </div>
+
+            <div class="display">
+                <ul><b>Display Type</b>
+                    <li><input type="checkbox">AMOLED</li>
+                    <li><input type="checkbox">LCD</li>
+                    <li><input type="checkbox">OLED</li>
+                </ul>
+            </div>
+
+            <div class="RF">
+                <ul><b>Refresh Rate</b>
+
+                    <li><input type="checkbox">Up to 88 Hz</li>
+                    <li><input type="checkbox">89 to 104 Hz</li>
+                    <li><input type="checkbox">105 to 120 Hz</li>
+                    <li><input type="checkbox">121 Hz & above</li>
+
+                </ul>
+            </div>
+
+            <div class="battery">
+                <ul><b>Battery Capacity</b>
+                    <li><input type="checkbox">Up to 2,999 mAh</li>
+                    <li><input type="checkbox">3,000 to 3,999 mAh</li>
+                    <li><input type="checkbox">4,000 to 4,999 mAh</li>
+                    <li><input type="checkbox">5,000 to 5,999 mAh</li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="main">
+            <div class="ad">
+                <video autoplay loop muted
+                    src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/32251ece-7579-430f-8038-01008feac25b.mp4/productVideoOptimized.mp4"></video>
+                <div class="ad-phone">
+                    <div class="ad-mob">
+                        <div class="ad-box">
+                            <img src="https://m.media-amazon.com/images/I/4108Ig7HKtL._AC_SR250,250_QL65_.jpg" alt="">
+                        </div>
+                        <div class="ad-box">
+                            <img src="https://m.media-amazon.com/images/I/51aRO3CD1AL._AC_SR250,250_QL65_.jpg" alt="">
+                        </div>
+                        <div class="ad-box">
+                            <img src="https://m.media-amazon.com/images/I/41wx1tBgPEL._AC_SR250,250_QL65_.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="ad-info">
+                        <p>Redmi 13 5G, Hawaiian Blue, 6GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera |
+                            6.79in Largest Display in
+                            Segment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://m.media-amazon.com/images/I/81vxWpPpgNL._AC_UL480_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+
+
+
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://m.media-amazon.com/images/I/71MsYJjQhBL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+
+
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img src="https://m.media-amazon.com/images/I/71ZrPkGgcLL._AC_UL480_QL65_.jpg"
+                        alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/71ez69tPl4L._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/71GLMJ7TQiL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/6175SlKKECL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/61BxKJrnbdL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/71AUNTs39lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/61Io5-ojWUL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/61Io5-ojWUL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/61Io5-ojWUL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/61BxKJrnbdL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/71AUNTs39lL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img"> <img
+                        src="https://m.media-amazon.com/images/I/61Io5-ojWUL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://m.media-amazon.com/images/I/81vxWpPpgNL._AC_UL480_QL65_.jpg" alt="">
+                </div>
+                <p>Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</p>
+                <div class="info">
+                    <p id="sales">400+ bought in past month</p>
+                    <span id="Festival">Great Indian Festival</span>
+                </div>
+                <div class="cost">
+                    <span><strong>₹1,31,999</strong> MRP: ₹1,44,999 (9% off)
+                        Save extra with No Cost EMI Save extra with No Cost EMI</span>
+                    <div class="deliver"><span>Get it by <b>Tomorrow, 4 October</b>
+                            FREE Delivery by Amazon</span></div>
+                    <div class="btn"><button>Add to Cart</button></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="f-container" id="fc">
+            <div class="f-section">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="f-section">
+                <h3>GROUP COMPANIES</h3>
+                <ul>
+                    <li><a href="#">Myntra</a></li>
+                    <li><a href="#">Cleartrip</a></li>
+                    <li><a href="#">Shopsy</a></li>
+                </ul>
+            </div>
+            <div class="f-section">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="f-section">
+                <h3>CONSUMER POLICY</h3>
+                <ul>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Grievance Redressal</a></li>
+                    <li><a href="#">EPR Compliance</a></li>
+                </ul>
+            </div>
+            <div class="f-section" id="mail">
+                <h3>MAIL US:</h3>
+                <p>Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia &<br>Clove Embassy Tech
+                    Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru, 560103, Karnataka, India</p>
+                <div class="social">
+                    <h3>Social</h3>
+                    <div class="soclink">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="f-section" id="reg">
+                <h3>REGISTERED OFFICE ADDRESS:</h3>
+                <p>Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia &<br>Clove Embassy Tech
+                    Village,<br>Outer Ring Road, Devarabeesanahalli Village,<br>Bengaluru, 560103, Karnataka,
+                    India<br>CIN : U51109KA2012PTC066107<br>Telephone: <a href="">044-45614700</a> / <a
+                        href="">9082158632</a></p>
+            </div>
+        </div>
+        <br><br>
+
+
+        <div class="f-container">
+            <div class="combined">
+
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+                        alt="Become a Seller" width="20" height="18" font-weight="bold">Become Seller
+                </a>
+
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+                        alt="Advertise" width="20" height="18" font-weight="bold"> Advertise
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+                        alt="Gift Cards" width="20" height="18" font-weight="bold"> Gift Cards
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+                        alt="Help Center" width="20" height="18" font-weight="bold"> Help Center
+                </a>
+
+
+
+                <div class="bottom">
+                    &copy; 2007-2025 Flipkart.com
+                </div>
+
+                <div class="payment-icons">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+                        alt="Payment methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        function toggleBrands() {
+            var moreBrands = document.getElementById("moreBrands");
+            var toggleBtn = document.getElementById("toggleBtn");
+
+            if (moreBrands.style.display === "none") {
+                moreBrands.style.display = "block";
+                toggleBtn.innerHTML = "See Less";
+            } else {
+                moreBrands.style.display = "none";
+                toggleBtn.innerHTML = "See More";
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -4,6 +4,109 @@
      box-sizing: border-box;
  }
 
+ a {
+     text-decoration: none;
+ }
+
+ body {
+     background-color: #F1F2F4;
+ }
+
+ .container {
+     max-width: 1334px;
+ }
+
+
+ header {
+     height: 70px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color: #474748;
+     background-color: white;
+     padding-right: 18px;
+ }
+
+ .logo {
+     width: 160px;
+ }
+
+ .search {
+     height: 40px;
+     width: 560px;
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     color: #777A7E;
+     background-color: #F0F5FF;
+ }
+
+ .search i {
+     font-size: 1.4rem;
+     margin: 0px 10px;
+ }
+
+ .search input {
+     height: 40px;
+     width: 100%;
+     background: transparent;
+     font-size: 1.1rem;
+ }
+
+ .icon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     font-weight: 400;
+ }
+
+
+ .download {
+     display: none;
+     /* Hidden by default */
+ }
+
+ /* Responsive Design */
+ @media screen and (max-width: 642px) {
+     .search {
+         display: none;
+         /* Hide search bar */
+     }
+
+
+     .Cart span {
+         display: none;
+     }
+
+     .fa-store {
+         display: none;
+     }
+
+     .seller span {
+         display: none;
+     }
+
+     .menudot {
+         display: none;
+     }
+
+     .download {
+         display: flex;
+         padding-left: 55px;
+     }
+
+     .logo {
+         padding-left: 0;
+     }
+
+     header {
+         justify-content: space-between;
+     }
+ }
+
+
  .slider {
      position: relative;
      width: 100%;
@@ -33,13 +136,13 @@
 
  /* info */
 
- .info h2 {
+ .Information h2 {
      font-size: 1rem;
      color: #878787;
      font-weight: 600;
  }
 
- .info {
+ .Information {
      font-size: 0.8rem;
      padding: 30px;
      color: gray;
@@ -52,6 +155,7 @@
      color: white;
      width: 100%;
      padding: 20px;
+
  }
 
  .f-container {
